@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f0f0f2"
+    tools:context="com.sntinfotech.sntinfotech.Fragments.AboutUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="About Us"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#000"/>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="#111"/>-->
+       </LinearLayout>
+       <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+           android:background="@drawable/about2"
+           android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About us"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/red"/>
+
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="7pt"
+        android:textColor="@color/gray"/>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

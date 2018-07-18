@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f0f0f2"
+    tools:context="com.sntinfotech.sntinfotech.Fragments.Product">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f2"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/p_photo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="8pt"
+            android:layout_marginTop="10dp"
+            android:text="Fire Alarm Gon Bell"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="7pt"
+                android:text="Product Code: "/>
+            <TextView
+                android:id="@+id/p_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="7pt"
+                android:textColor="#f36400"
+                android:text="FA253"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="7pt"
+                android:text="Price: "/>
+            <TextView
+                android:id="@+id/p_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="7pt"
+                android:textColor="#05abc5"
+                android:text="1000"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:background="#f0f0f2"
+            android:layout_marginLeft="10dp"
+            android:textSize="19dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="Payment Mode"/>
+
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="300dp"
+            android:numColumns="2"
+            android:horizontalSpacing="10dp"/>
+        <!--<TextView-->
+            <!--android:id="@+id/p_mode"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="left"-->
+            <!--android:textSize="7pt"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:text="We are involved in offering Software Web Development SEO SMO our customers and after understand - See more at: http://www.bizzduniya.com/Service/snt-infotech-pvt-ltd/software-developments-service/3#sthash.4qdoGvjM.dpuf "/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:background="#f0f0f2"
+            android:layout_marginLeft="10dp"
+            android:textSize="19dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="Description"/>
+
+        <TextView
+            android:id="@+id/p_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="7pt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="We are involved in offering Software Web Development SEO SMO our customers and after understand - "/>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="#111"/>-->
+
+
+        <Button
+            android:id="@+id/p_enquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btngradent"
+            android:layout_marginLeft="10dp"
+            android:text="Send Enquiry"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

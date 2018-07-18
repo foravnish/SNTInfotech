@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#f0f0f2"
+        android:orientation="vertical">
+
+
+
+        //// from here
+        <RelativeLayout
+            android:id="@+id/rela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                >
+            </android.support.v4.view.ViewPager>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicat"
+                android:layout_alignTop="@+id/slider"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:visibility="gone"
+                android:layout_width="match_parent" />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/rela"
+            android:scaleType="fitXY"
+            android:background="@drawable/home11" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:background="#f0f0f2"
+            android:layout_marginLeft="10dp"
+            android:textSize="19dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="LATEST PRODUCTS"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp">
+
+
+        </FrameLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/search_ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="60dp"
+            android:visibility="visible"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3987173620445938/8393663131">
+        </com.google.android.gms.ads.AdView>
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="top"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:id="@+id/liner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:paddingTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/profile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray2"
+                        android:textSize="13dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/profile1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Home"/>
+                    <TextView
+                        android:id="@+id/product"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="13dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/product1"
+                        android:textColor="@color/gray2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Products"/>
+                    <TextView
+                        android:id="@+id/update"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/update1"
+                        android:textSize="13dp"
+                        android:textColor="@color/gray2"
+                        android:drawablePadding="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Updates"/>
+
+                    <TextView
+                        android:id="@+id/enquiry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/enquiry1"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/gray2"
+                        android:text="Enquiry"/>
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/contact"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textColor="@color/gray2"-->
+                        <!--android:textSize="13dp"-->
+                        <!--android:drawableTop="@drawable/contact1"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:gravity="center"-->
+                        <!--android:drawablePadding="5dp"-->
+                        <!--android:text="Contact"/>-->
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

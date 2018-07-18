@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sntinfotech.sntinfotech.Fragments.Enquiry">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Enquiry"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email ID"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/gradent"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Mobile No"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:inputType="number"-->
+            <!--android:background="@drawable/gradent"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Name"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:background="@drawable/gradent"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Message"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="130dp"-->
+            <!--android:inputType="textMultiLine"-->
+            <!--android:gravity="top"-->
+            <!--android:background="@drawable/gradent"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<android.support.v7.widget.AppCompatCheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:buttonTint="#f36400"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/term"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="I agree to all the Term &amp; Conditions of bizzduniya.com "/>-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@drawable/btngradent"
+            android:textColor="#FFF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/search_ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="60dp"
+            android:visibility="visible"
+            ads:adSize="BANNER"
+            android:layout_marginTop="40dp"
+            ads:adUnitId="ca-app-pub-3987173620445938/8393663131">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
